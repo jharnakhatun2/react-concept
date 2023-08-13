@@ -6,6 +6,7 @@ import ClickCounter from "./state-management/render-props/children/ClickCounter"
 import ClickCounters from "./state-management/render-props/render/ClickCounters";
 import Counter from "./state-management/render-props/render/Counter";
 import HoverCounters from "./state-management/render-props/render/HoverCounters";
+import ChildOne from "./state-management/contextApi/ChildOne";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           )}
         />
       </div>
+      <ChildOne />
     </section>
   );
 }
