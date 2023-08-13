@@ -7,6 +7,8 @@ import ClickCounters from "./state-management/render-props/render/ClickCounters"
 import Counter from "./state-management/render-props/render/Counter";
 import HoverCounters from "./state-management/render-props/render/HoverCounters";
 import ChildOne from "./state-management/contextApi/ChildOne";
+import ArrayDistructuring from "./hooks/useState/ArrayDistructuring";
+import Display from "./hooks/useState/Display";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         />
       </div>
       <ChildOne />
+      <ArrayDistructuring />
+      <Display />
     </section>
   );
 }
