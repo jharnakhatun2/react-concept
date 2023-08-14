@@ -9,10 +9,21 @@ import HoverCounters from "./state-management/render-props/render/HoverCounters"
 import ChildOne from "./state-management/contextApi/ChildOne";
 import ArrayDistructuring from "./hooks/useState/ArrayDistructuring";
 import Display from "./hooks/useState/Display";
+import WithoutDependency from "./hooks/useEffect/WithoutDependency";
+import BlankDependency from "./hooks/useEffect/BlankDependency";
+import WithDependency from "./hooks/useEffect/WithDependency";
+import { useState } from "react";
 
 function App() {
+  const [show, setShow] = useState(true);
   return (
     <section className="px-20 py-10">
+      {show && <WithoutDependency />}
+      <button type="button" onClick={() => setShow((preShow) => !preShow)}>
+        {show ? "Hide Button" : "Show Button"}
+      </button>
+      <BlankDependency />
+      <WithDependency />
       <Main />
       <ChildrenApply />
       <Parent />
