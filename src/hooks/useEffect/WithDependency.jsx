@@ -5,7 +5,6 @@ export default function WithDependency() {
 
   // use useEffect with count dependency. as a result when change count value only that time useEffect call
   useEffect(() => {
-    console.log("Updating Count item");
     document.title = count;
   }, [count]);
 

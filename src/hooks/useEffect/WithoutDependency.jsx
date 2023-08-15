@@ -7,7 +7,6 @@ export default function WithoutDependency() {
 
   // use useEffect without any dependency. as a result it call  every render
   useEffect(() => {
-    console.log("without dependency");
     document.title = count;
   });
 
@@ -16,7 +15,6 @@ export default function WithoutDependency() {
   };
 
   const tick = () => {
-    console.log("continue time");
     setDate(new Date());
   };
   // use useEffect with blank dependency. as a result it call one time when page render in first time

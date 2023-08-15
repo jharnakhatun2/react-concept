@@ -13,6 +13,8 @@ import WithoutDependency from "./hooks/useEffect/WithoutDependency";
 import BlankDependency from "./hooks/useEffect/BlankDependency";
 import WithDependency from "./hooks/useEffect/WithDependency";
 import { useState } from "react";
+import DisplayStyle from "./style-components/DisplayStyle";
+import Displaycall from "./hooks/useCallback-useMemo/Displaycall";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -44,6 +46,10 @@ function App() {
       <ChildOne />
       <ArrayDistructuring />
       <Display />
+      {/* style Components */}
+      <DisplayStyle />
+      {/* useCallback and use Memo */}
+      <Displaycall />
     </section>
   );
 }
