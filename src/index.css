@@ -1,3 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.button {
+  background-color: #504141;
+  color: aliceblue;
+  padding: 5px 10px;
+}

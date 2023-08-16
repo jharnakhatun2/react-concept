@@ -15,11 +15,14 @@ import WithDependency from "./hooks/useEffect/WithDependency";
 import { useState } from "react";
 import DisplayStyle from "./style-components/DisplayStyle";
 import Displaycall from "./hooks/useCallback-useMemo/Displaycall";
+import DisplayRef from "./hooks/useRef.jsx/DisplayRef";
+import DisplayReducer from "./hooks/useReducer/DisplayReducer";
 
 function App() {
   const [show, setShow] = useState(true);
   return (
     <section className="px-20 py-10">
+      <DisplayRef />
       {show && <WithoutDependency />}
       <button type="button" onClick={() => setShow((preShow) => !preShow)}>
         {show ? "Hide Button" : "Show Button"}
@@ -50,6 +53,9 @@ function App() {
       <DisplayStyle />
       {/* useCallback and use Memo */}
       <Displaycall />
+      {/* useReducer */}
+
+      <DisplayReducer />
     </section>
   );
 }
