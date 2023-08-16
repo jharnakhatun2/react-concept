@@ -1,9 +1,9 @@
-import PremitiveValue from "./PremitiveValue";
+import ComplexCounter from "./ComplexCounter";
 
 export default function DisplayReducer() {
   return (
     <div>
-      <PremitiveValue />
+      <ComplexCounter />
     </div>
   );
 }
