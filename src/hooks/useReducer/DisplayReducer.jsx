@@ -1,5 +1,7 @@
 import { createContext, useReducer } from "react";
 import ContextProps from "./ContextProps";
+import UseEffect from "./dataFetching/useEffect";
+import UseReducer from "./dataFetching/UseReducer";
 
 export const ContextData = createContext();
 const initialValue = 5;
@@ -21,6 +23,8 @@ export default function DisplayReducer() {
       <ContextData.Provider value={{ dispatch }}>
         <ContextProps />
       </ContextData.Provider>
+      <UseEffect />
+      <UseReducer />
     </div>
   );
 }
