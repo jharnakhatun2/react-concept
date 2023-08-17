@@ -18,11 +18,16 @@ import Displaycall from "./hooks/useCallback-useMemo/Displaycall";
 import DisplayRef from "./hooks/useRef.jsx/DisplayRef";
 import DisplayReducer from "./hooks/useReducer/DisplayReducer";
 import DisplayHook from "./hooks/customHook/DisplayHook";
+import CssModule from "./pages/CssModule";
+import "./assets/css/global.css";
+import FunctionalStyle from "./style-components/FunctionalStyle";
 
 function App() {
   const [show, setShow] = useState(true);
   return (
     <section className="px-20 py-10">
+      <FunctionalStyle />
+      <CssModule />
       <DisplayHook />
       <DisplayRef />
       {show && <WithoutDependency />}
