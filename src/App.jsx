@@ -17,11 +17,13 @@ import DisplayStyle from "./style-components/DisplayStyle";
 import Displaycall from "./hooks/useCallback-useMemo/Displaycall";
 import DisplayRef from "./hooks/useRef.jsx/DisplayRef";
 import DisplayReducer from "./hooks/useReducer/DisplayReducer";
+import DisplayHook from "./hooks/customHook/DisplayHook";
 
 function App() {
   const [show, setShow] = useState(true);
   return (
     <section className="px-20 py-10">
+      <DisplayHook />
       <DisplayRef />
       {show && <WithoutDependency />}
       <button type="button" onClick={() => setShow((preShow) => !preShow)}>
